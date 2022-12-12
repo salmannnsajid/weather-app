@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState } from "react";
+import { Weather } from "./pages/Weather";
+import { SelectLocation } from "./pages/SelectLocation";
 
 function App() {
+  const [city, updateCity] = useState();
+  const [weather, updateWeather] = useState();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <span className="appLabel">Weather App</span>
+      {city && weather ? (
+        <>
+          <Weather weather={weather} />
+          <button
+            className="btn btn-primary"
+            onClick={() => {
+              updateCity();
+              updateWeather();
+            }}
+          >
+            Go Back
+          </button>
+        </>
+      ) : (
+        <SelectLocation
+          city={city}
+          updateCity={updateCity}
+          updateWeather={updateWeather}
+        />
+      )}
     </div>
   );
 }

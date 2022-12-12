@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 380px;
+  padding: 20px 10px;
+  margin: auto;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px 0 #555;
+  background: white;
+  font-family: Montserrat;
+}
+
+.appLabel {
+  color: black;
+  margin: 20px auto;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.CloseButton {
+  padding: 2px 3px;
+  background-color: black;
+  border-radius: 50%;
   color: white;
+  position: absolute;
 }
 
-.App-link {
-  color: #61dafb;
+.SearchBox {
+  margin: 20px;
+  border-radius: 2px;
+  border: black solid 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.input {
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  font-family: Montserrat;
+  font-weight: bold;
+}
+.button {
+  background-color: black;
+  font-size: 14px;
+  padding: 0 10px;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-weight: bold;
+}
+.ChooseCityLabel {
+  color: black;
+  margin: 10px auto;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.WelcomeWeatherLogo {
+  width: 140px;
+  height: 140px;
+  margin: 40px auto;
+}
+
+.Location {
+  padding-left: 50px;
+  text-transform: capitalize;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.Condition {
+  margin: 20px auto;
+  text-transform: capitalize;
+  font-size: 14px;
+  span {
+    font-size: 28px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.WeatherInfoLabel {
+  margin: 20px 25px 10px;
+  text-transform: capitalize;
+  text-align: start;
+  width: 90%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.WeatherIcon {
+  width: 100px;
+  height: 100px;
+  margin: 5px auto;
+}
+
+.WeatherContainer {
+  display: flex;
+  width: 100%;
+  margin: 30px auto;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.WeatherInfoContainer {
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.InfoContainer {
+  display: flex;
+  margin: 5px 10px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.InfoIcon {
+  width: 36px;
+  height: 36px;
+}
+
+.InfoLabel {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  margin: 15px;
+  span {
+    font-size: 12px;
+    text-transform: capitalize;
   }
+}
+
+.select-location {
+  display: flex;
+  flex-direction: column;
 }
