@@ -73,8 +73,11 @@ export const Weather = ({ weather }) => {
           ""
         )}
       </div>
-      <span className="Location">{`${weather?.name}, ${weather?.sys?.country}`}</span>
-      <span className="WeatherInfoLabel">Weather Info</span>
+      <div className="text-center">
+        <p className="Location">{`${weather?.name}, ${weather?.sys?.country}`}</p>
+        <p className="WeatherInfoLabel">Weather Info</p>
+      </div>
+      <div className="text-center"></div>
       <div className="WeatherInfoContainer">
         <WeatherInfoComponent
           name={isDay ? "sunset" : "sunrise"}

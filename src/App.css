@@ -68,7 +68,6 @@
 }
 
 .Location {
-  padding-left: 50px;
   text-transform: capitalize;
   font-size: 28px;
   font-weight: bold;
@@ -84,10 +83,7 @@
 }
 
 .WeatherInfoLabel {
-  margin: 20px 25px 10px;
   text-transform: capitalize;
-  text-align: start;
-  width: 90%;
   font-weight: bold;
   font-size: 14px;
 }
